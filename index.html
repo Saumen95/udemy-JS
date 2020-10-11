@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // this is a test
+        /* Multilime
+        comment*/
+        console.log('Hello World')
+
+        // test variable
+        age = 24;
+        console.log(age);
+        // let is recomended, var is alternative
+        let firstName, lastName = 'Saumen Roy'
+        console.log(firstName);
+        console.log(lastName);
+        const obj = {
+            name: "Saumen",
+            Age: 24,
+            Education: "CUET"
+        }; // object declaration(mutable,container type, can take one value, curly braces)
+
+        console.log(obj.Education);
+        delete obj.Age;
+        console.log(obj); // properties after deletion
+
+        // Arrays
+        const a1 = [1, 2, 3, 4];
+        const a2 = [1, 'One', 'two', 2];
+        const a3 = [
+                [1, 2, 3],
+                ['one', 'two', 'three'], 'four', 4
+            ]
+            // Declearing Arrays                                     
+        console.log(a3[0].length); // Length
+        console.log(a3[0]);
+        console.log(a3[0][0]); // get the 1st element of inner array in a3
+        const a4 = a3.concat(a1); // concat two arrays
+        console.log(a4);
+    </script>
+</body>
+
+</html>
