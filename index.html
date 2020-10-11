@@ -44,6 +44,19 @@
         console.log(a3[0][0]); // get the 1st element of inner array in a3
         const a4 = a3.concat(a1); // concat two arrays
         console.log(a4);
+
+        // Escape Char
+        let temp = 30.1;
+        let cat = `Temp here: ${temp}\u4354`;
+        console.log(cat);
+
+        let result = 5 * `5`;
+        let result2 = 5 + `5`;
+        let result3 = 5 / `5`;
+
+        console.log(result); // 25,understood
+        console.log(result2); //55, strange, beacuse it concats two string thats it
+        console.log(result3); // Divide,works
     </script>
 </body>
 
