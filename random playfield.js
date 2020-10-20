@@ -1,8 +1,8 @@
 function get(url) {
-    return new Promise(function(resolve, reject) {
+    return new Promise(function (resolve, reject) {
         let req = new XMLHttpRequest(); // new object to xmlhttpreq
         req.open('GET', url); // get url
-        req.onload = function() {
+        req.onload = function () {
             if (req.status == 200) {
                 resolve(req.response); // after 200 ms record the response
             } else {
@@ -10,7 +10,7 @@ function get(url) {
             }
         };
 
-        req.onerror = function() {
+        req.onerror = function () {
             return 'Network Error'; //if error occurs, return this function
         };
 
@@ -21,11 +21,10 @@ function get(url) {
 
 // Use all of these
 
-get('stoty.json').then(function(response) {
-        JSON.parse
-        console.log('Success', response);
-    },
-    function(error) {
+get('stoty.json').then(function (response) {
+    console.log('Success', response);
+},
+    function (error) {
 
         console.error('Failed!', error);
 
