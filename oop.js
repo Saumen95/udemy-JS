@@ -12,30 +12,18 @@ cat.age += 1;
 
 cat.age;
 // 3
-
-cat.age += 1;
-
-cat.age;
-// 3
-
-
 cat.name = 'Bambi';
 
-cat.name;
+function sayHi() {
+    console.log('its me' + ' ' + cat.name);
+}
+
+sayHi();
+
+console.log(cat.name);
 // 'Bambi'
 
-const printer = {
-
-    on = true,
-    mode = 'black & white',
-    remsheet = 168,
-    print: function () {
-        console.log('The printer is printing!');
-    }
-
-};
-
-delete printer.mode;
+cat.greet(cat.name);
 
 
 let house = {
@@ -46,6 +34,3 @@ let house = {
 };
 
 console.log(house.numRooms);
-
-
-
