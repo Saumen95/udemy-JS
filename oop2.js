@@ -9,7 +9,7 @@ const developer = {
         console.log('Hi there');
     },
     favouriteLanguage: function (language) {
-        console.log(`my fav language is ${language}`);
+        console.log(`my favourite language is ${language}`);
 
     }
 
