@@ -6,7 +6,7 @@ function sayHello() {
 const developer = {
     name: 'Andrew',
     sayHello: function () {
-        console.log('Hi thre');
+        console.log('Hi there');
     },
     favouriteLanguage: function (language) {
         console.log(`my fav language is ${language}`);
